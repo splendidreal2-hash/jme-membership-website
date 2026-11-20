@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JME Entertainment Records membership cards and membership enquiries.">
+<title>JME Entertainment Records | Membership</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="assets/jme-logo.jpeg" alt="JME Entertainment Records logo"><span>JME <small>ENTERTAINMENT RECORDS</small></span></a>
+  <nav><a href="#memberships">Memberships</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-admin" href="management.html">Management</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">JME ENTERTAINMENT RECORDS</p>
+    <h1>Join the <span>JME</span> membership community.</h1>
+    <p>Explore the membership card options associated with artist Bam Tharudeone. Choose a package to continue to the secure hosted checkout.</p>
+    <a class="button" href="#memberships">Explore memberships</a>
+  </div>
+  <div class="hero-art"><img src="assets/membership-1.jpeg" alt="Bam Tharudeone JME membership card"></div>
+</section>
+<section class="section" id="memberships">
+  <div class="section-heading"><p class="eyebrow">MEMBERSHIP OPTIONS</p><h2>Choose your membership</h2><p>Prices are displayed in US dollars. Select a membership to continue to secure card checkout.</p></div>
+  <div class="cards">
+    <article class="membership-card">
+      <img src="assets/membership-1.jpeg" alt="JME membership card one">
+      <div class="card-body"><p class="tier">MEMBERSHIP 01</p><h3>JME Membership</h3><p class="price">$399.99</p><button class="button order-button" data-package="Membership 1" data-price="$399.99">JOIN &amp; PAY</button></div>
+    </article>
+    <article class="membership-card">
+      <img src="assets/membership-2.jpeg" alt="JME membership card two">
+      <div class="card-body"><p class="tier">MEMBERSHIP 02</p><h3>JME Membership</h3><p class="price">$849.89</p><button class="button order-button" data-package="Membership 2" data-price="$849.89">JOIN &amp; PAY</button></div>
+    </article>
+    <article class="membership-card">
+      <img src="assets/membership-3.jpeg" alt="JME VIP membership card">
+      <div class="card-body"><p class="tier">MEMBERSHIP 03</p><h3>VIP Membership</h3><p class="price">$1,200.00</p><button class="button order-button" data-package="VIP Membership 3" data-price="$1,200.00">JOIN &amp; PAY</button></div>
+    </article>
+  </div>
+  <p class="notice">The JME logo is used for website branding and is not a membership product.</p>
+</section>
+<section class="about section" id="about"><div><p class="eyebrow">ABOUT JME</p><h2>Artist-led. Management-supported.</h2><p>This membership information page is for JME Entertainment Records and artist Bam Tharudeone.</p></div><div class="manager"><span class="manager-label">MANAGEMENT</span><h3>Alex Huz</h3><p>Manager for Bam Tharudeone</p></div></section>
+<section class="section contact" id="contact"><p class="eyebrow">GET IN TOUCH</p><h2>Contact management</h2><div class="contact-grid">
+<a href="tel:+18476859394"><strong>Phone</strong><span>847-685-9394</span></a>
+<a href="mailto:jmeentertainmentrecords@gmail.com"><strong>Email</strong><span>jmeentertainmentrecords@gmail.com</span></a>
+<a href="https://t.me/jme_records" target="_blank" rel="noopener"><strong>Telegram</strong><span>@jme_records</span></a>
+</div></section>
+</main>
+<footer><span>© <span id="year"></span> JME Entertainment Records</span><a href="management.html">Management access</a></footer>
+<div class="modal" id="order-modal" aria-hidden="true"><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="checkout-title"><button class="close" type="button" aria-label="Close">&times;</button><p class="eyebrow">JME MEMBERSHIP CHECKOUT</p><h2 id="checkout-title">Continue to payment</h2><form id="order-form">
+<label>Your name<input name="name" required autocomplete="name" placeholder="Full name" maxlength="120"></label>
+<label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com" maxlength="254"></label>
+<label>Selected membership<input name="package" id="package" readonly></label>
+<label>Price<input name="price" id="price" readonly></label>
+<p class="form-note">When online payments are enabled, you will be redirected to the payment provider's secure hosted checkout. JME's website will never ask you to enter or send your card number, CVV, PIN, or banking password here.</p>
+<p class="checkout-status" id="checkout-status" role="status" aria-live="polite">You will be redirected to the payment provider’s secure hosted checkout. JME never collects card details on this website.</p>
+<button class="button checkout-submit" type="submit">JOIN &amp; PAY</button>
+<a class="whatsapp-link" href="https://wa.me/18476859394" target="_blank" rel="noopener">Questions? Contact JME management on WhatsApp</a>
+</form></div></div>
+<script src="script.js"></script>
+</body></html>

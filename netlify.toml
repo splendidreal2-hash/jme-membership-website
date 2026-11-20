@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[build.environment]
+  # These two values are public, not secrets: SITE_URL is the site's own
+  # address and NOCTRA_SETTLEMENT_ASSET is a currency code ("USDT_ERC20").
+  # They appear in README.txt and as a code default, which tripped the
+  # secrets scanner. NOCTRA_SECRET_KEY and NOCTRA_WEBHOOK_SECRET are still scanned.
+  SECRETS_SCAN_OMIT_KEYS = "NOCTRA_SETTLEMENT_ASSET,SITE_URL"
